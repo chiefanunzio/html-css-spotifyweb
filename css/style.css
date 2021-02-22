@@ -8,6 +8,10 @@ ul li{
   list-style-type: none;
 }
 
+h2{
+  color:#ddd;
+  margin-bottom: 20px;
+}
 
 .vh-box{
   height: 100vh;
@@ -15,6 +19,7 @@ ul li{
 
 .contenitore{
   display: flex;
+  overflow: auto;
   height: calc(100vh - 50px);
 }
 
@@ -23,20 +28,60 @@ ul li{
   display: flex;
   background-color: lightgreen;
   width: 200px;
-
+  overflow: auto;
 }
+
+.upgrade{
+  background-color: #ccc;
+  min-height: 50px;
+  width: 100%;
+  text-align: right;
+  z-index: 999;
+}
+
+
 
 .box-item{
   background-color: blue;
   width: 100%;
+  overflow: auto;
 }
 
 .player{
-  z-index: 99;
-  bottom: 0;
-  left: 0;
   background-color: #ccc;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
-  align-self: flex-end;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul li{
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar ul li a{
+  color: #ddd;
+}
+
+.row{
+  content: '';
+  display:table;
+  clear: both;
+  margin: 20px;
+ }
+
+.copertina img{
+  width: 100%;
+}
+
+.copertina{
+  margin: 5px;
+  width: calc(100% / 6 - 10px);
+  text-align: center;
+  float: left;
 }
