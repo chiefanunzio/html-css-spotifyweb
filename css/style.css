@@ -72,7 +72,9 @@ h2{
 }
 
 .playlist{
+  height: 50%;
   color: #ddd;
+  overflow: auto;
 }
 
 
