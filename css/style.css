@@ -8,6 +8,14 @@ ul li{
   list-style-type: none;
 }
 
+a, span{
+  color:rgb(128, 128, 128);
+}
+
+a{
+  text-decoration: none;
+}
+
 h2{
   color:#ddd;
   margin-bottom: 20px;
@@ -15,6 +23,7 @@ h2{
 
 .vh-box{
   height: 100vh;
+  font-family: sans-serif;
 }
 
 .contenitore{
@@ -24,24 +33,33 @@ h2{
 }
 
 .nav-aside{
-  padding-left: 10px;
+  padding:10px 15px;
   background-color: lightgreen;
   width: 200px;
   overflow: auto;
+  z-index: 10;
 }
 
 .upgrade{
-  background-color: #ccc;
+  background-color: black;
+  opacity: 0.9;
   min-height: 50px;
-  width: calc(100% - 160px);
+  width: 100%;
   text-align: right;
-  z-index: 999;
+  line-height: 50px;
   position: fixed;
   top:0;
   right: 0;
+  z-index: 9;
 }
 
-
+.upgrade a{
+  padding: 8px 20px;
+  border:1px solid #ddd;
+  border-radius: 15px;
+  font-size: 8px;
+  color:#ddd;
+}
 
 .box-item{
   background-color: blue;
@@ -50,7 +68,7 @@ h2{
 }
 
 .player{
-  background-color: #ccc;
+  background-color: grey;
   min-height: 50px;
   width: 100%;
 }
@@ -59,6 +77,7 @@ h2{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .navbar ul li{
@@ -66,15 +85,12 @@ h2{
   padding: 10px;
 }
 
-.navbar ul li a{
-  color: #ddd;
-}
-
 .row{
   content: '';
   display:table;
   clear: both;
-  margin: 20px;
+  padding: 20px 10px;
+  width: calc(100% - 20px);
  }
 
 .copertina img{
