@@ -9,7 +9,7 @@ ul li{
   list-style-type: none;
 }
 
-a, span{
+a, span, p{
   color:rgb(128, 128, 128);
 }
 
@@ -17,9 +17,9 @@ a{
   text-decoration: none;
 }
 
-h2{
+h2, h4{
   color:#ddd;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 .vh-box{
@@ -30,24 +30,25 @@ h2{
 .contenitore{
   display: flex;
   overflow: auto;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
 }
 /* head-botton */
 .upgrade{
   background-color: black;
-  opacity: 0.9;
-  min-height: 50px;
+  opacity: 0.5;
+  min-height: 60px;
   width: 100%;
   text-align: right;
-  line-height: 50px;
+  line-height: 60px;
   position: fixed;
   top:0;
   right: 0;
-  z-index: 9;
+
 }
 
 .upgrade a{
-  padding: 8px 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
   border:1px solid #ddd;
   border-radius: 15px;
   font-size: 8px;
@@ -59,6 +60,10 @@ h2{
   background-color: black;
   width: 200px;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
 }
 
 .nav-aside img{
@@ -76,23 +81,46 @@ h2{
   color: #ddd;
   overflow: auto;
 }
+/* profile */
+.account ul li:last-child{
+  border-top: 1px solid grey;
+  line-height: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+.account .fa-user-circle{
+  font-size: 30px;
+}
+.account ul li{
+  padding: 10px 0;
+}
+
+.account ul li i{
+  margin-right: 10px;
+}
 
 
 /* navbar main */
-.navbar{
+.navbar ul{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .navbar ul li{
-  display: inline-block;
   padding: 10px;
+  font-size: 10px;
+  background-image: url("../img/green-nav.svg");
+  background-size: 20px 50px;
+  background-repeat: no-repeat;
+  background-position:top;
+
 }
 
 .box-item{
-  background-color: blue;
+  background-color: #0d0b19;
   width: 100%;
   overflow: auto;
 }
@@ -107,6 +135,7 @@ h2{
 
 .copertina img{
   width: 100%;
+  margin-top: 20px;
 }
 
 .copertina{
@@ -116,12 +145,17 @@ h2{
   float: left;
 }
 
+.pop .copertina img{
+  border-radius: 50%;
+}
+
 
 
 
 /* footer */
 .player{
-  background-color: grey;
-  min-height: 50px;
+  background-color: #292929;
+  min-height: 60px;
   width: 100%;
+  z-index: 999;
 }
