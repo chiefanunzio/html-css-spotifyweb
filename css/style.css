@@ -25,7 +25,7 @@ h2, h4 {
 
 .vh-box {
   height: 100vh;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contenitore {
@@ -68,8 +68,9 @@ h2, h4 {
   justify-content: space-between;
 }
 
-.nav-aside img {
+.nav-aside  a img {
   margin-bottom: 10px;
+  width: 170px;
 }
 
 .nav-aside ul li>a img {
@@ -103,7 +104,6 @@ h2, h4 {
 
 .account ul li a{
   margin: 0;
-
 }
 
 .account ul li:last-child {
@@ -133,8 +133,12 @@ h2, h4 {
   margin-top: 70px;
 }
 
+.navbar ul li a{
+  margin:0 10px;
+}
+
 .navbar ul li {
-  padding: 10px;
+  padding: 10px 5px;
   font-size: 10px;
 }
 
@@ -181,5 +185,25 @@ h2, h4 {
   z-index: 999;
 }
 
-/* media  */
-@media all and ()
+/* madia xs*/
+@media screen and (max-width: 552px) {
+  .copertina{
+    max-width: calc(100% / 2 - 10px);
+  }
+}
+
+/* media s */
+@media screen and (min-width: 553px) and (max-width: 639px){
+  .copertina{
+    max-width: calc(100% / 2 - 10px);
+  }
+
+}
+
+/* media md */
+@media screen and (min-width: 640px) and (max-width: 878px){
+  .copertina{
+    max-width: calc(100% / 4 - 10px);
+  }
+
+}
