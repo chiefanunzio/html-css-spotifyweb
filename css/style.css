@@ -59,11 +59,11 @@ h2, h4{
   padding:10px 15px;
   background-color: black;
   width: 200px;
+  min-height: 350px;
   z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
-
 }
 
 .nav-aside img{
@@ -74,6 +74,17 @@ h2, h4{
   margin-right: 5px;
   width: 30px;
   vertical-align: middle;
+}
+
+.playlist ul li{
+  margin: 15px 0;
+}
+
+.fas.fa-plus{
+  background-color: #ccc;
+  color:black;
+  padding:8px;
+  margin-right: 10px;
 }
 
 .playlist{
@@ -88,7 +99,6 @@ h2, h4{
   font-size: 20px;
   color: white;
 }
-
 .account .fa-user-circle{
   font-size: 30px;
 }
