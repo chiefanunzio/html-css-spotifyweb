@@ -38,7 +38,7 @@ h2, h4 {
 .upgrade {
   background-color: black;
   opacity: 0.5;
-  min-height: 60px;
+  min-height: 70px;
   width: 100%;
   text-align: right;
   line-height: 60px;
@@ -56,16 +56,33 @@ h2, h4 {
   color: #ddd;
 }
 
+/* nav-toggle */
+.nav-toggle{
+  width: 50px;
+  text-align: center;
+  display: none;
+}
+
+.nav-toggle ul li a img{
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+
 /* nav- aside */
 .nav-aside {
-  padding: 10px 20px;
+  padding: 10px 0;
   background-color: black;
   width: 300px;
   min-height: 350px;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.home-playlist{
+  flex-grow: 1;
 }
 
 .nav-aside  a img {
@@ -101,6 +118,11 @@ h2, h4 {
 }
 
 /* profile */
+
+.account{
+  width: 80%;
+  margin-left: 20px;
+}
 
 .account ul li a{
   margin: 0;
@@ -190,6 +212,22 @@ h2, h4 {
   .copertina{
     max-width: calc(100% / 2 - 10px);
   }
+  .nav-aside{
+    width: 50px;
+  }
+
+  .home-playlist, .account{
+    display: none;
+  }
+
+  .nav-toggle{
+    display: block;
+  }
+
+  .nav-toggle ul li a{
+    margin: 0;
+  }
+
 }
 
 /* media s */
