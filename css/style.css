@@ -210,9 +210,16 @@ h2, h4 {
   z-index: 999;
 }
 
+.artist-song{
+  width: 230px;
+  min-width: 180px;
+  position: relative;
+}
+
 .artist-song ul li span{
   margin: 0;
   font-size: 12px;
+  min-width: 75px;
 }
 
 .player .artist-song img{
@@ -237,11 +244,17 @@ h2, h4 {
 
 .like-save{
   display: inline-block;
-  margin-left: 30px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translate(0px,-50%);
 }
-
+/* player */
 .play{
   text-align: center;
+  width: 700px;
+  min-width: 240px;
+
 }
 
 .play ul li{
@@ -250,15 +263,35 @@ h2, h4 {
   margin: 10px;
 }
 
+.fa-play-circle{
+  font-size: 25px;
+}
+
 .time-line span{
   color: #ddd;
   font-size: 10px;
+  margin: 0;
 }
 
 .line{
-  width: 300px;
   border:2px solid grey;
   display: inline-block;
+}
+
+.line.-ct{
+  margin: 0 10px;
+  width:80%;
+  min-width: 100px;
+}
+
+.volume{
+  width: 250px;
+  min-width: 200px;
+}
+
+.line.-rt{
+  width: 40%;
+  min-width: 90px;
 }
 
 .volume ul , .volume ul li{
