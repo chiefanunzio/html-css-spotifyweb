@@ -187,17 +187,39 @@ h2, h4 {
 
 .copertina img {
   width: 100%;
-  margin-top: 20px;
 }
 
-.copertina {
+.copertina{
   margin: 5px;
   max-width: calc(100% / 6 - 10px);
   text-align: center;
 }
 
+.cover{
+  position: relative;
+}
+
+.layover.fa-play-circle{
+  display: none;
+  font-size: 80px;
+  color: #ddd;
+  margin: 0;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
 .pop .copertina img {
   border-radius: 50%;
+}
+
+.cover:hover{
+  opacity: 0.8;
+}
+
+.cover:hover .layover{
+  display: block;
 }
 
 /* footer */
