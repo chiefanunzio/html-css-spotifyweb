@@ -24,7 +24,6 @@ h2, h4 {
 }
 
 .vh-box {
-  height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -32,6 +31,13 @@ h2, h4 {
   display: flex;
   height: calc(100vh - 100px);
 }
+
+/* hover */
+a:hover, .fa-heart:hover, .fa-folder:hover{
+  color: #ddd;
+  transition: 0.3s;
+}
+
 
 /* head-botton */
 .upgrade {
@@ -46,6 +52,7 @@ h2, h4 {
   right: 0;
 }
 
+
 .upgrade a {
   margin-right: 20px;
   padding: 10px 20px;
@@ -53,8 +60,14 @@ h2, h4 {
   border-radius: 15px;
   font-size: 8px;
   color: #ddd;
+  transition: 0.5s;
 }
 
+.upgrade > a:hover{
+  font-size: 15px;
+  color: green;
+  border-color: green;
+}
 /* nav-toggle */
 .nav-toggle {
   height: 100%;
@@ -101,6 +114,17 @@ h2, h4 {
 
 .home li:hover {
   border-left-color: green;
+  transition: 1s;
+}
+
+.home-list  img:hover{
+  filter: grayscale(100%)
+          brightness(40%)
+          sepia(100%)
+          hue-rotate(50deg)
+          saturate(1000%)
+          contrast(0.8);
+  transition: 0.3s;
 }
 
 .playlist li {
@@ -171,6 +195,7 @@ h2, h4 {
   background-size: 20px 50px;
   background-repeat: no-repeat;
   background-position: top;
+  transition: 0.5s;
 }
 
 /* box cover artist */
@@ -218,7 +243,8 @@ h2, h4 {
 }
 
 .cover:hover img{
-  opacity: 0.8;
+  opacity: 0.6;
+  transition: 0.5s;
 }
 
 .cover:hover .layover {
@@ -304,6 +330,20 @@ h2, h4 {
   font-size: 25px;
 }
 
+.fa-redo:hover, #lg:hover{
+  animation: rotate1 1s linear;
+}
+
+@keyframes rotate1{
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(270deg);
+  }
+}
+
 .time-line span {
   color: #ddd;
   font-size: 10px;
@@ -341,10 +381,13 @@ h2, h4 {
 }
 
 .level:hover{
+  width: 100%;
   border-color: green;
+  transition: 3s;
 }
 
 .level:hover i{
+  transition: 0.5s;
   display: block;
 }
 
