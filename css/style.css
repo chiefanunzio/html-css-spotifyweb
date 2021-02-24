@@ -30,7 +30,7 @@ h2, h4 {
 
 .contenitore {
   display: flex;
-  /* height: calc(100vh - 100px); */
+  height: calc(100vh - 100px);
 }
 
 /* head-botton */
@@ -74,11 +74,12 @@ h2, h4 {
   width: 300px;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);
+  overflow: hidden;
+  /* height: calc(100vh - 100px); */
 }
 
 .home-playlist{
-  flex-grow: 1;
+
   overflow: hidden;
 }
 
@@ -109,7 +110,8 @@ h2, h4 {
 }
 
 .playlist {
-  max-height: 35%;
+  min-height: 200px;
+  flex-grow: 1;
   color: #ddd;
   overflow:auto;
 }
