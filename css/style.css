@@ -12,6 +12,7 @@ ul li {
 a, span, p {
   color: rgb(128, 128, 128);
   margin: 10px 20px;
+  font-size: 12px;
 }
 
 a {
@@ -127,8 +128,12 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   transition: 0.3s;
 }
 
+.home-list li a{
+  line-height: 20px;
+}
+
 .playlist li {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .fas.fa-plus {
@@ -139,7 +144,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 }
 
 .playlist {
-  min-height: 30%;
+  min-height: 25vh;
   flex-grow: 1;
   color: #ddd;
   overflow: auto;
@@ -157,7 +162,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 
 .account ul li:last-child {
   border-top: 1px solid grey;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
@@ -452,6 +457,8 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   .copertina {
     max-width: calc(100% / 2 - 10px);
   }
+
+
 }
 
 /* media md */
@@ -459,4 +466,5 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   .copertina {
     max-width: calc(100% / 4 - 10px);
   }
+
 }
