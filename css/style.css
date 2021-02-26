@@ -52,7 +52,6 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   right: 0;
 }
 
-
 .upgrade a {
   margin-right: 20px;
   padding: 10px 20px;
@@ -74,6 +73,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   width: 50px;
   text-align: center;
   display: none;
+
 }
 
 .nav-toggle div ul li i {
@@ -127,10 +127,6 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   transition: 0.3s;
 }
 
-.playlist li {
-  margin: 15px 0;
-}
-
 .fas.fa-plus {
   background-color: #ccc;
   color: black;
@@ -138,11 +134,19 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   margin-right: 10px;
 }
 
+.playlist li {
+  margin: 5px 0;
+}
+
 .playlist {
-  min-height: 30%;
+  min-height: 25%;
   flex-grow: 1;
   color: #ddd;
   overflow: auto;
+}
+
+.playlist ul li a{
+  font-size: 0.7em;
 }
 
 .playlist::-webkit-scrollbar{
@@ -161,12 +165,12 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 
 .account ul li:last-child {
   border-top: 1px solid grey;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
 .account .fa-user-circle {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .account ul li {
@@ -194,7 +198,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
   font-size: 10px;
 }
 
-.navbar ul li:hover {
+.navbar ul li:hover{
   background-image: url("../img/green-nav.svg");
   background-size: 20px 50px;
   background-repeat: no-repeat;
@@ -430,6 +434,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 
   .nav-aside {
     width: 50px;
+    transition: 0.5s;
   }
 
   .home-list, .playlist, .account {
@@ -458,6 +463,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 @media screen and (min-width: 553px) and (max-width: 639px) {
   .copertina {
     max-width: calc(100% / 2 - 10px);
+    transition: 0.5s;
   }
 }
 
@@ -465,5 +471,6 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 @media screen and (min-width: 640px) and (max-width: 878px) {
   .copertina {
     max-width: calc(100% / 4 - 10px);
+    transition: 0.5s;
   }
 }
