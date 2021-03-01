@@ -460,7 +460,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 }
 
 /* media s */
-@media screen and (min-width: 553px) and (max-width: 639px) {
+@media screen and (min-width: 552px) and (max-width: 639px) {
   .copertina {
     max-width: calc(100% / 2 - 10px);
     transition: 0.5s;
@@ -468,7 +468,7 @@ a:hover, .fa-heart:hover, .fa-folder:hover{
 }
 
 /* media md */
-@media screen and (min-width: 640px) and (max-width: 878px) {
+@media screen and (min-width: 639px) and (max-width: 878px) {
   .copertina {
     max-width: calc(100% / 4 - 10px);
     transition: 0.5s;
